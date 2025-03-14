@@ -1,6 +1,7 @@
 # Snake Game
 
 A simple web-based Snake game with user authentication. Play the classic game while keeping track of your score and competing with friends!
+![{5F3969AA-1B44-4699-B398-46015C824C08}](https://github.com/user-attachments/assets/7f4ea163-9f69-4282-9145-dca823e4b14a)
 
 ## Features
 
