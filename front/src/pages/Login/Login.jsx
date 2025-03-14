@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { parseJwt } from '../../utils/auth';
@@ -8,6 +8,10 @@ function Login() {
   const [password, setPassword] = useState('');
   const [formError, setFormError] = useState('');
   const navigate = useNavigate();
+
+  useEffect(() => {
+    document.title = "Log in to play";
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

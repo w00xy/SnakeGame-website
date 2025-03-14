@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, use } from 'react';
 import { getUserFromToken, isAuthenticated, logout } from '../../utils/auth';
 import { useNavigate } from 'react-router-dom';
 import './Main.css';
@@ -8,7 +8,7 @@ function Main() {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
     const navigate = useNavigate();
-    
+
     useEffect(() => {
         console.log('Main component mounted');
         

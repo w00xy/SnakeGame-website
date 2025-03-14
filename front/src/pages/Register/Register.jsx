@@ -16,6 +16,8 @@ function Register() {
   const navigate = useNavigate();
 
   useEffect(() => {
+    document.title = "Sign up to play";
+
     const checkUsername = async () => {
       if (username) {
         const response = await fetch(`http://127.0.0.1:8000/check-username?username=${username}`);
